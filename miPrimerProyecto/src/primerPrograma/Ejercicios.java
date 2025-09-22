@@ -11,6 +11,7 @@ public class Ejercicios {
 		y=4;
 		z=10;
 		
-		System.out.println(2 * x + 0.5F * y - 1/5.0 * z);
+		
+		System.out.println(!(2*x == y/2 || (PI - E)*z>y) == (!(y/2 == 2*x)&& !(y<(PI-E)*z)));
 	}
 }
