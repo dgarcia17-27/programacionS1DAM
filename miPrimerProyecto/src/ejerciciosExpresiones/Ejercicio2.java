@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Ejercicio2 {
 	
 	/*
-	  Diseña un programa que indique si un número pasado por teclado es
-	  múltiplo de siete o no.
-	  */
+	  	Diseña un programa que indique si un número pasado por teclado es
+	  	múltiplo de siete o no.
+	 */
 
 	public static void main(String[] args) {
 		

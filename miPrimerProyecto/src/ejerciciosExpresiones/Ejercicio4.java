@@ -10,7 +10,6 @@ public class Ejercicio4 {
 		gravedad en de 9.8, mientras que en la Luna es de 1.62
 	*/
 	
-	
 	public static void main(String[] args) {
 		
 		final double GRAVEDADTIERRA = 9.8;

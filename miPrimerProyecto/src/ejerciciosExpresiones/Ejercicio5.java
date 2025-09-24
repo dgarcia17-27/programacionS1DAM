@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 public class Ejercicio5 {
 
-	
 	/*
 		Realiza un programa que nos pida cuantos segundos duró un concierto,
 		y nos calcule cuantas horas, minutos y segundos son.	 
 	 */
-	
 	
 	public static void main(String[] args) {
 		

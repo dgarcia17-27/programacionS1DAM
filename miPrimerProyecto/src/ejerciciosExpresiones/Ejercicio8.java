@@ -3,10 +3,12 @@ package ejerciciosExpresiones;
 import java.util.Scanner;
 
 public class Ejercicio8 {
+	
 	/*
 	 	Crea un programa que pida cual es el radio de una circunferencia y nos
 		calcule cual es la longitud y el área.
 	 */
+	
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);

@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 public class Ejercicio7 {
 
-	
 	/*
 	 	Prepara un programa que pide por teclado tres números y nos dice si
 		están ordenados o no.
 	 */
-	
 	
 	public static void main(String[] args) {
 		
