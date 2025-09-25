@@ -20,15 +20,6 @@ public class Ejercicio9 {
 		int numReves = 0, restoNum;
 		
 		
-		
-		/* 
-			Sirve para obtener el último número, añadirlo al principio
-			de la variable de numeros al revés y luego elimina
-			el número, del numero introducido para que 
-			en cada iteración, se agregue un número y se elimine el mismo 
-			de los introducidos.
-		*/
-		
 		while (num > 0) {
 			restoNum = num % 10;
 			numReves = numReves * 10 + restoNum;
