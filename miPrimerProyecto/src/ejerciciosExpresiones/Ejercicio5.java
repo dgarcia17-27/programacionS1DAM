@@ -20,7 +20,11 @@ public class Ejercicio5 {
 		
 		hora = numSeg/3600;
 		minutos = (numSeg-(3600*hora)) / 60;
+<<<<<<< HEAD
 		segundos = (numSeg-((hora*3600)+(minutos * 60)));
+=======
+		segundos = numSeg-((hora*3600)+(minutos * 60));
+>>>>>>> refs/remotes/origin/main
 		
 		System.out.println("Equivale a: " + hora + ":" + minutos + ":" + segundos);
 		
