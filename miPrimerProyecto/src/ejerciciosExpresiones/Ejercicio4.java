@@ -12,9 +12,7 @@ public class Ejercicio4 {
 	
 	public static void main(String[] args) {
 		
-		final double GRAVEDADTIERRA = 9.8;
-		final double GRAVEDADLUNA = 1.62;
-		
+		final double GRAVEDADTIERRA = 9.8, GRAVEDADLUNA = 1.62;
 		
 		Scanner teclado = new Scanner(System.in);
 		double pesoTierra;
