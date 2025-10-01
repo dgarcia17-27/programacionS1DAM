@@ -22,20 +22,17 @@ public class ReciboDelAgua {
 		teclado.close();
 		
 		
-		if (metrosConsumidos < 0) {
-			System.out.println("Revisa bien el contador!");
-		}else if(metrosConsumidos <= 10){
-			precio = metrosConsumidos * 1;
+		if(metrosConsumidos < 10){
+			precio = metrosConsumidos;
 			System.out.printf("Tienes que pagar: %d€",precio);
-		}else if(metrosConsumidos > 10 && metrosConsumidos <= 19){
-			precio = metrosConsumidos * 4;
+		}else if(metrosConsumidos >= 10 && metrosConsumidos <= 19){
+			precio = ((metrosConsumidos - 10)*4) + 9;
 			System.out.printf("Tienes que pagar: %d€",precio);
-		}else if(metrosConsumidos > 20){
-			precio = metrosConsumidos * 10;
+		}else if(metrosConsumidos >= 20){
+			precio = ((metrosConsumidos - 19)*10) + 49;
 			System.out.printf("Tienes que pagar: %d€",precio);
-		}else {
-			System.out.println("No tienes que pagar nada.");
 		}
+		
 	}
 
 }
