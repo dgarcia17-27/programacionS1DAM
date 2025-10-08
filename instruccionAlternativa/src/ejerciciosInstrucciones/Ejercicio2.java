@@ -27,14 +27,14 @@ public class Ejercicio2 {
 		teclado.close();
 
 		aux = horas * 3600;
-		aux = aux + (min * 60);
-		aux = aux  + (seg * 60);
+		aux += (min * 60);
+		aux += seg;
 		
 		horas = aux / 3600;
 		min = (aux % 3600)/60;
-		seg = ((aux % 3600)%60)/60;
+		seg = (aux % 3600)%60;
 		
-		System.out.printf("%d:%d:%d", horas, min,seg);
+		System.out.printf("%d Horas %d Minuto %d Segundos", horas, min,seg);
 	}
 
 }

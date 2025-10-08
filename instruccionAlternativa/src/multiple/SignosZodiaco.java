@@ -101,6 +101,9 @@ public class SignosZodiaco {
 				System.out.println("Eres Capricornio");
 			}
 			break;
+		default:
+			System.out.println("Fecha incorrecta.");
+			break;
 		}
 
 	}
