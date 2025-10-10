@@ -29,7 +29,7 @@ public class Ejercicio4 {
 			System.out.println("ERROR: El número de lotería introducido no es válido.");
 		} else if(numJugado == numPremiado){
 			System.out.println("Has ganado la lotería!!!");
-		} else if((numJugado / 10000) == (numPremiado / 10000) || (numJugado % 10) == (numPremiado % 10)) {
+		}else if((numJugado / 10000) == (numPremiado / 10000) || (numJugado % 10) == (numPremiado % 10)) {
 			System.out.println("Si tiene reintegro.");
 		} else {
 			System.out.println("La próxima vez será.");
