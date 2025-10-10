@@ -17,21 +17,23 @@ public class Ejercicio4 {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);
-		final String NUM_PREMIADO = "29348";
-		String num_loteria;
+		int numPremiado = 29348,numJugado;
 		
-		System.out.print("Introduce tu número de la lotería: ");
-		num_loteria = teclado.nextLine();
+		System.out.print("Introduce el número jugado: ");
+		numJugado = teclado.nextInt();
 		teclado.close();
 		
-		if(num_loteria.length() != 5) {
-			System.out.println("Error: El número de lotería introducido no es válido");
-		}else if(num_loteria.charAt(0) == NUM_PREMIADO.charAt(0) || num_loteria.charAt(4) == NUM_PREMIADO.charAt(4)){
-			System.out.println("Si tiene reintegro.");
-		}else {
-			System.out.println("No has ganado nada. La próxima vez será.");
-		}
+		String longitud = String.valueOf(numJugado);
 		
+		if(longitud.length() != 5) {
+			System.out.println("ERROR: El número de lotería introducido no es válido.");
+		} else if(numJugado == numPremiado){
+			System.out.println("Has ganado la lotería!!!");
+		} else if((numJugado / 10000) == (numPremiado / 10000) || (numJugado % 10) == (numPremiado % 10)) {
+			System.out.println("Si tiene reintegro.");
+		} else {
+			System.out.println("La próxima vez será.");
+		}
 
 	}
 
