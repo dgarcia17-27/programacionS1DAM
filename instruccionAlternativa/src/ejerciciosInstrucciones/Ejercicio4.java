@@ -17,12 +17,14 @@ public class Ejercicio4 {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);
-		int numPremiado = 29348,numJugado;
+		double numPremiado = (int)(Math.random()*100000);
+		int numJugado;
 		
 		System.out.print("Introduce el número jugado: ");
 		numJugado = teclado.nextInt();
 		teclado.close();
 		
+		System.out.printf("El número premiado es: %d\n",(int)numPremiado);
 		String longitud = String.valueOf(numJugado);
 		
 		if(longitud.length() != 5) {
