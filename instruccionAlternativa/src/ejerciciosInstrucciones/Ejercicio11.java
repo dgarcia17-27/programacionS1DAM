@@ -76,7 +76,11 @@ public class Ejercicio11 {
 			
 			switch (unidades) {
 			case 0:
-				textoUnidades = "";
+				if(decenas == 0) {
+					textoUnidades = "Cero";
+				}else {
+					textoUnidades = "";
+				}
 				break;
 			case 1:
 				textoUnidades = "Uno";
