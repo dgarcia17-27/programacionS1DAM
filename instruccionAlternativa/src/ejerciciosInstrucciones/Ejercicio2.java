@@ -16,7 +16,7 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);
-		int horas,min,seg,aux;
+		int horas,min,seg;
 		
 		System.out.print("Introduce la cantidad de horas: ");
 		horas = teclado.nextInt();
@@ -26,15 +26,14 @@ public class Ejercicio2 {
 		seg = teclado.nextInt();
 		teclado.close();
 
-		aux = horas * 3600;
-		aux += (min * 60);
-		aux += seg;
+		seg += horas * 3600;
+		seg += min * 60;
 		
-		horas = aux / 3600;
-		min = (aux % 3600)/60;
-		seg = (aux % 3600)%60;
+		horas = seg / 3600;
+		min = (seg % 3600)/60;
+		seg = (seg % 3600)%60;
 		
-		System.out.printf("%d Horas %d Minuto %d Segundos", horas, min,seg);
+		System.out.printf("Tiempo correcto: %d Horas %d Minuto %d Segundos", horas, min,seg);
 	}
 
 }
