@@ -28,7 +28,9 @@ public class Ejercicio6 {
 		}else {
 			switch(mes) {
 			case 1, 3, 5, 7,8, 10, 12:
-				if (dia == 31) {
+				if(dia > 31) {
+					System.out.println("ERROR: La fecha introducida no es válida.");
+				} else if (dia == 31) {
 					dia = 1;
 					if(mes == 12) {
 						mes = 1;
@@ -43,7 +45,9 @@ public class Ejercicio6 {
 				}
 				break;
 			case 4,6,9,11:
-				if (dia == 30) {
+				if(dia > 30) {
+					System.out.println("ERROR: La fecha introducida no es válida.");
+				} else if (dia == 30) {
 					dia = 1;
 					++mes;
 					System.out.printf("La fecha del día siguiente es: %d/%d/%d",dia,mes,año);
@@ -53,7 +57,9 @@ public class Ejercicio6 {
 				}
 				break;
 			case 2:
-				if (dia == 28) {
+				if(dia > 28) {
+					System.out.println("ERROR: La fecha introducida no es válida.");
+				} else if (dia == 28) {
 					dia = 1;
 					++mes;
 					System.out.printf("La fecha del día siguiente es: %d/%d/%d",dia,mes,año);

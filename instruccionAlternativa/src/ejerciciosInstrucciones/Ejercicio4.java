@@ -24,7 +24,7 @@ public class Ejercicio4 {
 		numJugado = teclado.nextInt();
 		teclado.close();
 		
-		System.out.printf("El número premiado es: %d\n",(int)numPremiado);
+		System.out.printf("El número premiado es: %05d\n",(int)numPremiado);
 		String longitud = String.valueOf(numJugado);
 		
 		if(longitud.length() != 5) {
