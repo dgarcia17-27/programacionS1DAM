@@ -36,7 +36,7 @@ public class Ejercicio12 {
 			hora = 0;
 		}
 		
-		System.out.printf("La hora introducida con un segundo más es: %d:%d:%d",hora,min,seg);
+		System.out.printf("La hora introducida con un segundo más es: %02d:%02d:%02d",hora,min,seg);
 	}
 
 }
