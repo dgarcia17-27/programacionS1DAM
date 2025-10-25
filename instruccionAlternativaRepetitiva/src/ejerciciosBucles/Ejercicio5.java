@@ -14,21 +14,19 @@ public class Ejercicio5 {
 	
 	public static void main(String[] args) {
 		
-		Scanner teclado = new Scanner(System.in);
-		int num, numAnterior1 = 0, numAnterior2 = 1, resultado;
-		
-		System.out.print("Teclea un número: ");
-		num = teclado.nextInt();
-		teclado.close();
-		
-		System.out.printf("%d %d",numAnterior1,numAnterior2);
-		
-		for (int i = 2; i < num; i++) {
-			resultado = numAnterior1 + numAnterior2;
-			System.out.printf(" %d",resultado);
-			
-			numAnterior1 = numAnterior2;
-			numAnterior2 = resultado;
+		int a,n,r = 0;
+
+        System.out.print("Teclea un número: ");
+        a = sc.nextInt();
+        System.out.print("Teclea un número para la potencia: ");
+        n = sc.nextInt();
+
+        r = a;
+
+        for (int i = 1; i < n; i++) {
+            r = r * a;
+        }
+        System.out.print(r);
 		}
 		
 	}
