@@ -15,19 +15,31 @@ public class Ejercicio6 {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);
-		float num;
-		
-		System.out.print("Teclea un número: ");
-		num = teclado.nextInt();
-		teclado.close();
-		
-		if (num > 0) {
-			System.out.println((int)(num * num));
-		} else if (num < 0){
-			System.out.println(1/(num*num));
-		}else {
-			System.out.println((int)1);
-		}
+        int a,n,resultado;
+
+        System.out.print("Teclea un número: ");
+        a = teclado.nextInt();
+        System.out.print("Teclea una potencia: ");
+        n = teclado.nextInt();
+        teclado.close();
+
+        if(n > 0){
+            resultado = a;
+            for (int i = 1; i < n; i++) {
+                resultado *= a;
+            }
+            System.out.print(resultado);
+        }else if(n < 0){
+            resultado = a;
+            n *= -1;
+            for (int i = 1; i < n; i++) {
+                resultado *= a;
+            }
+            System.out.print((double)1/resultado);
+        }else{
+            resultado = 1;
+            System.out.print(resultado);
+        }
 		
 	}
 }
