@@ -13,7 +13,7 @@ public class Ejercicio5 {
 	 */
 	
 	public static void main(String[] args) {
-		
+		Scanner sc = new Scanner(System.in);
 		int a,n,r = 0;
 
         System.out.print("Teclea un número: ");
@@ -27,7 +27,7 @@ public class Ejercicio5 {
             r = r * a;
         }
         System.out.print(r);
-		}
-		
 	}
+		
 }
+
