@@ -13,7 +13,19 @@ public class Ejercicio9 {
 	
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		int n;
+		int n, resto;
+		String binario = "";
+
+		System.out.print("Teclea un número: ");
+		n = teclado.nextInt();
+		teclado.close();
+
+		while (n > 0) {
+			resto = n % 2;
+			binario = resto + binario;
+			n /= 2;
+		}
+		System.out.println(binario);
 	}
 
 }
