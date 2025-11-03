@@ -18,5 +18,6 @@ public class Ejercicio1 {
 			}
 		} while (iguales == false && (n <= 99 && n >= 0));
 		System.out.println("El programa finalizó con éxito");
+		teclado.close();
 	}
 }

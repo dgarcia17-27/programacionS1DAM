@@ -1,7 +1,5 @@
 package ejerciciosBucles;
 
-import java.util.Scanner;
-
 public class Ejercicio11 {
 	
 	/*
