@@ -23,6 +23,8 @@ public class Ejercicio3 {
 		resto = dni / 23;
 		letra = dni - (resto * 23);
 		
+		System.out.println(letra);
+		
 		switch(letra) {
 		case 0:
 			System.out.println("La letra de tu DNI es: T");
