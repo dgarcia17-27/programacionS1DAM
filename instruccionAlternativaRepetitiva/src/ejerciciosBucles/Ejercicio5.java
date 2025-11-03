@@ -13,16 +13,16 @@ public class Ejercicio5 {
 	 */
 	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner teclado = new Scanner(System.in);
 		int n, r, n1 = 0,n2 = 1;
 		
 		System.out.print("Teclea un número: ");
-		n = sc.nextInt();
-		sc.close();
+		n = teclado.nextInt();
+		teclado.close();
 		
 		System.out.printf("%d %d", n1, n2);
 		
-		for (int i = 2; i < n; i++) {
+		for (int i = 3; i <= n; i++) {
 			r = n1 + n2;
 			System.out.print(" " + r);
 			

@@ -16,9 +16,13 @@ public class Ejercicio7 {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);
-        int num, nMayor = 0, nRepeticiones = 0;
+        int num, nMayor, nRepeticiones = 0;
+        
+        System.out.print("Teclea un número: ");
+        num = teclado.nextInt();
+        nMayor = num;
 
-        do{
+        while(num != 0){
             System.out.print("Teclea un número: ");
             num = teclado.nextInt();
             if (num > nMayor){
@@ -28,7 +32,7 @@ public class Ejercicio7 {
             if (num == nMayor){
                 nRepeticiones++;
             }
-        }while(num != 0);
+        }
         System.out.printf("El mayor es el %d\n",nMayor);
         System.out.printf("Se repite %d veces\n",nRepeticiones);
 
