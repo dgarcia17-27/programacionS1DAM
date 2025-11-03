@@ -11,6 +11,7 @@ public class Ejercicio13 {
             Introduciendo: 10 18
             Da como salida: 90
      */
+    
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int n1,n2, mcm,mcd, aux, a, b;
