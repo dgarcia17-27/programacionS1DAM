@@ -12,10 +12,14 @@ public class Ejercicio4 {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);
-		int num, numAnterior = 0;
+		int num, numAnterior;
 		boolean hayRepetido = false;
 		
-		do {
+		System.out.print("Teclea un número: ");
+		num = teclado.nextInt();
+		numAnterior = num;
+		
+		while(num >= 0) {
 			System.out.print("Teclea un número: ");
 			num = teclado.nextInt();
 			if(num == numAnterior) {
@@ -23,7 +27,7 @@ public class Ejercicio4 {
 			}
 			numAnterior = num;
 			
-		}while(num >= 0);
+		}
 		
 		if(hayRepetido) {
 			System.out.println("Si");
