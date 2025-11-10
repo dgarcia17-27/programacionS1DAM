@@ -27,5 +27,6 @@ public class Ejercicio1 {
 			}
 		}while(count != 5);
 		System.out.printf("Da como salida: %d", resultado);
+		teclado.close();
 	}
 }
