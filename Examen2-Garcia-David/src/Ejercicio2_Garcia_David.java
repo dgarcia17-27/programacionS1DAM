@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ejercicio2_Garcia_David {
-    static void main() {
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int n, resto, nDepuradoInv = 0, nDepurado = 0;
 

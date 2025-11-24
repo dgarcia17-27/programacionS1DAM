@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ejercicio1_Garcia_David {
-    static void main() {
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         double x,n,e = 0,suma = 0,factorial = 1;
 

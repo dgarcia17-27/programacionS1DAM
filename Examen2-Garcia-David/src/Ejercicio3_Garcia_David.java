@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ejercicio3_Garcia_David {
-    static void main() {
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         final int AMPLITUDMAX = 12, AMPLITUDMIN = 1;
         int n, suma = 0;
