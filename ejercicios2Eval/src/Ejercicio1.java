@@ -18,17 +18,13 @@ public class Ejercicio1 {
     }
 
     public static String Traducir(){
-        String abecedario = "abcdefghijklmnopqrstuvwxyz";
-        String frase = "The sunset sets at twelve o'clock";
-        String traducido = "";
+        String abecedario = "abcdefghijklmnopqrstuvwxyz",
+                frase = "The sunset sets at twelve o'clock",traducido = "";
 
         for (int i = 0; i < frase.length(); i++) {
-            char letraA = frase.toLowerCase().charAt(i);
             for (int j = 0; j < abecedario.length(); j++) {
-                int pos = j + 1;
-                char letra = abecedario.charAt(j);
-                if (letra == letraA){
-                    traducido += pos + " ";
+                if (frase.toLowerCase().charAt(i) == abecedario.charAt(j)){
+                    traducido += j + 1 + " ";
                 }
             }
         }
