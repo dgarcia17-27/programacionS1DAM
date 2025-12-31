@@ -10,7 +10,7 @@
         }
 
         public static String ContarCadena(){
-            String cuenta = "", noRepetir = "", cadenaPrueba = "Me cago en la puta que liada de dia";
+            String cuenta = "", noRepetir = "", cadenaPrueba = "Hola mundo essto sirve para contar una cadena y sus valores";
             char letra;
             int contador = 0;
 
