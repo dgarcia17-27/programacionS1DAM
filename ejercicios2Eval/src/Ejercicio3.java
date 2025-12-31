@@ -10,7 +10,12 @@
         }
 
         public static String ContarCadena(){
+<<<<<<< HEAD
             String cuenta = "", noRepetir = "", cadenaPrueba = "Hola mundo essto sirve para contar una cadena y sus valores";
+=======
+            StringBuilder cuenta = new StringBuilder();
+            String cadenaPrueba = "Me cago en la puta que liada de dia", noRepetir = "";
+>>>>>>> 25b838b (update)
             char letra;
             int contador = 0;
 
@@ -27,11 +32,11 @@
                     }
                 }
 
-                cuenta += letra + " = " + contador + "\n";
+                cuenta.append(letra + " = " + contador + "\n") ;
                 noRepetir += letra;
                 contador = 0;
             }
 
-            return cuenta;
+            return cuenta.toString();
         }
     }
