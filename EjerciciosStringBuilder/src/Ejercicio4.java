@@ -8,11 +8,17 @@ public class Ejercicio4 {
      */
 
     public static void main(String[] args) {
-
+        System.out.println(Rotacion(4, "Lunes"));
     }
 
-    public static String Rotacion(int n){
-
-        return "";
+    public static String Rotacion(int n, String frase){
+        char auxiliar;
+        StringBuilder rotada = new StringBuilder(frase);
+        for (int i = 0; i < n; i++) {
+            auxiliar = rotada.charAt(rotada.length() - 1);
+            rotada.deleteCharAt(rotada.length() - 1);
+            rotada.insert(0,auxiliar);
+        }
+        return rotada.toString();
     }
 }
