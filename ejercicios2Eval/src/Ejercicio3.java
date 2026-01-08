@@ -10,7 +10,8 @@
         }
 
         public static String ContarCadena(){
-            String cuenta = "", noRepetir = "", cadenaPrueba = "Me cago en la puta que liada de dia";
+            StringBuilder cuenta = new StringBuilder();
+            String cadenaPrueba = "Me cago en la puta que liada de dia", noRepetir = "";
             char letra;
             int contador = 0;
 
@@ -27,11 +28,11 @@
                     }
                 }
 
-                cuenta += letra + " = " + contador + "\n";
+                cuenta.append(letra + " = " + contador + "\n") ;
                 noRepetir += letra;
                 contador = 0;
             }
 
-            return cuenta;
+            return cuenta.toString();
         }
     }
