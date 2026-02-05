@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Ex5 {
@@ -17,9 +18,12 @@ public class Ex5 {
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = random.nextInt(100) + 1;
         }
-        for (int i = 1; i <= 100; i++) {
+        Arrays.sort(numeros);
 
+        for (int i = 0; i < 100; i++) {
+            if (Arrays.binarySearch(numeros,i) < 0){
+                System.out.print(i + " ");
+            }
         }
-
     }
 }
