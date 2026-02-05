@@ -8,7 +8,7 @@ public class Ejercicio4 {
      */
 
     public static void main(String[] args) {
-        System.out.println(Rotacion(2, "Buenos días"));
+        System.out.println(Rotacion(2, "Lunes"));
     }
 
     public static String Rotacion(int n, String frase){

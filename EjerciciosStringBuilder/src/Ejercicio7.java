@@ -8,15 +8,14 @@ public class Ejercicio7 {
      */
 
     public static void main(String[] args) {
-        System.out.println(sumar("01 de Enero de 2026"));
+        System.out.println(sumar("15 de Enero de 2022"));
     }
 
     public static int sumar(String frase) {
         int suma = 0;
         for (int i = 0; i < frase.length(); i++) {
-            char aux = frase.charAt(i);
-            if (Character.isDigit(aux)) {
-                suma += Character.getNumericValue(aux);
+            if (Character.isDigit(frase.charAt(i))) {
+                suma += Character.getNumericValue(frase.charAt(i));
             }
         }
         return suma;

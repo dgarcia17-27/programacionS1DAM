@@ -18,8 +18,12 @@ public class Ejercicio2 {
         frase = teclado.nextLine();
         teclado.close();
 
+        frase.trim();
+
         for (int i = 0; i < frase.length(); i++) {
-            if (frase.charAt(i) == ',' || frase.charAt(i) == ' ' || frase.charAt(i) == '.'){
+            if (frase.charAt(i)==' ' || frase.charAt(i)==',' || frase.charAt(i)=='.'){
+                if (frase.charAt(frase.length()) == ' ' || frase.charAt(frase.length()) == ',' || frase.charAt(frase.length()) == '.'){
+                }
                 contador++;
             }
         }

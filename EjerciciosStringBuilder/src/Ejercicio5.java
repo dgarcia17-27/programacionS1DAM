@@ -8,7 +8,7 @@ public class Ejercicio5 {
      */
 
     public static void main(String[] args) {
-        System.out.println(milesimas(2388432.34));
+        System.out.println(milesimas(1000000));
     }
     public static String milesimas(double numero){
         int contador = 0;
