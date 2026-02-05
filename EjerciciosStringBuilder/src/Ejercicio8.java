@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Ejercicio8 {
 
     /**
@@ -15,9 +17,8 @@ public class Ejercicio8 {
         StringBuilder numero = new StringBuilder();
 
         for (int i = 0; i < frase.length(); i++) {
-            char c = frase.charAt(i);
-            if (Character.isDigit(c)) {
-                numero.append(c);
+            if (Character.isDigit(frase.charAt(i))) {
+                numero.append(frase.charAt(i));
             } else {
                 if (numero.length() > 0) {
                     suma += Integer.parseInt(numero.toString());
@@ -28,7 +29,6 @@ public class Ejercicio8 {
         if (numero.length() > 0) {
             suma += Integer.parseInt(numero.toString());
         }
-
         return suma;
     }
 }
