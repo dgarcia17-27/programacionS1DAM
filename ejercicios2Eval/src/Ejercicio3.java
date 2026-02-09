@@ -11,7 +11,7 @@
 
         public static String ContarCadena(){
             StringBuilder cuenta = new StringBuilder();
-            String cadenaPrueba = "Me cago en la puta que liada de dia", noRepetir = "";
+            String cadenaPrueba = "Hola mundo esto es una prueba", noRepetir = "";
             char letra;
             int contador = 0;
 

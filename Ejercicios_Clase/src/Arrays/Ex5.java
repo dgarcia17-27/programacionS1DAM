@@ -18,6 +18,7 @@ public class Ex5 {
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = random.nextInt(100) + 1;
         }
+
         Arrays.sort(numeros);
 
         for (int i = 0; i < 100; i++) {
