@@ -6,7 +6,7 @@ public class claseList {
 
         /*
             Las listas son colecciones ordenadas que pueden crecer dinámicamente.
-            A diferencia de los 'arrays' una List puede cambiar de tamañopara acomodar cualquier
+            A diferencia de los 'arrays' una List puede cambiar de tamaño para acomodar cualquier
             número de elementos.
          */
 
@@ -81,8 +81,8 @@ public class claseList {
         /*
             nombres[0] = "Elena" ❌
             nombres.add("Elena"); ✅
-            nombres.get(10); // Si sólo hay 3 elementos da error.
 
+            nombres.get(10); ❌ // Si sólo hay 3 elementos da error.
             if (nombres.size() > 10){ ✅
                 nombres.get(10);
             }
