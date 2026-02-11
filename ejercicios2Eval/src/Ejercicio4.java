@@ -43,5 +43,4 @@ public class Ejercicio4 {
         // Imprimo la hora correcta
         System.out.printf("%02d:%02d:%02d",horas,min,seg);
     }
-
 }
