@@ -27,7 +27,7 @@ public class claseSet {
         // por lo que comparte mucho con otros métodos con otros tipos de Collection
         // Una diferencia importante con Collection es que métodos como add/remove
         // devuelve un boolean (en lugar de void)
-        // indicando si el elemento estaba o no en el Set cuando se llamó al método
+        // indicando si el elemento estaba o no en el Set cuando se llamó al metodo
 
         Set<Integer> set = new HashSet<>();
         set.add(1);
@@ -97,7 +97,7 @@ public class claseSet {
 
             /// TASK 4. Identificar cartas comunes
             // Tu y tus amigos os reunís y os preguntais, cuales son las cartas más comunes
-            // Implementa un método que recibe una lista de colecciones y devuelve un set con las cartas que estan
+            // Implementa un metodo que recibe una lista de colecciones y devuelve un set con las cartas que estan
             // presentes en todas las colecciones
 
             static Set<String> commonCards(List<Set<String>> collection){

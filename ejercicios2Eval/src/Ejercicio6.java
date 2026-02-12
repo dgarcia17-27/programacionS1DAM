@@ -1,11 +1,11 @@
 public class Ejercicio6 {
 
     public static void main(String[] args) {
-        System.out.println(Telefono("Hola mundo"));
+        System.out.println(Telefono("Hola Mundo"));
     }
     public static String Telefono(String mensaje){
         boolean mayus = false;
-        StringBuilder teclas = new StringBuilder("");
+        StringBuilder teclas = new StringBuilder();
         String codigo = "";
         for (int i = 0; i < mensaje.length(); i++) {
 
