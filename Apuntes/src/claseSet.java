@@ -104,7 +104,7 @@ public class claseSet {
                 if (collection == null || collection.isEmpty()) {
                     return new HashSet<>();
                 }
-                Set<String> resultado = 
+                return new HashSet<>();
             }
 
         }
