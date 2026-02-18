@@ -35,9 +35,9 @@ public class Ejercicio7 {
                     }
                 }
             }
-
+            
             //recorrer secciones de 3x3
-            int raiz = (int)Math.sqrt(sudoku.length);
+            int raiz = (int) Math.sqrt(sudoku.length);
             for (int i = 0; i < sudoku.length; i+= raiz){
                 for (int j = 0; j < sudoku[i].length; j+= raiz){
                     for (int k = i; k < i + raiz; k++) {
