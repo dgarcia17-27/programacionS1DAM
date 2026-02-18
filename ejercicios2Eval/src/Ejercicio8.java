@@ -48,8 +48,9 @@ public class Ejercicio8 {
             }
         }
 
-        if (Arrays.equals(sumaRows,sumaCols) && sumaRows[0] == sumaDiagonales[0] && sumaDiagonales[1] == sumaRows[0]){
-            System.out.println(true);
+        if(Arrays.equals(sumaRows, sumaCols)){
+            int[] comp = Arrays.copyOf(sumaRows, sumaDiagonales.length);
+            System.out.println(Arrays.equals(comp, sumaDiagonales));
         } else {
             System.out.println(false);
         }
