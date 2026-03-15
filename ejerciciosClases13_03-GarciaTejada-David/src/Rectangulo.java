@@ -1,14 +1,52 @@
-import java.util.Scanner;
-
 public class Rectangulo {
-    static int ancho = 5;
-    static int alto = 3;
 
-    public static boolean comprobar(int ancho, int alto){
-        return ancho > 0 && alto > 0;
+    // ATRIBUTOS
+    private int alto;
+    private int ancho;
+
+
+    // CONSTRUCTOR
+    // Constructor vacío con valores default
+    public Rectangulo(){
+        this.alto = 3;
+        this.ancho = 12;
     }
 
-    public static void Rectangulo(int ancho, int alto){
+    // Constructor con parámetros
+    public Rectangulo(int alto, int ancho){
+        setAlto(alto);
+        setAncho(ancho);
+    }
+
+
+    // MÉTODOS
+    // Setters
+    private void setAlto(int alto){
+        if (alto < 1){
+            this.alto = 3;
+        } else {
+            this.alto = alto;
+        }
+    }
+
+    private void setAncho(int ancho){
+        if (ancho < 1){
+            this.ancho = 12;
+        } else {
+            this.ancho = ancho;
+        }
+    }
+
+    // Getters
+    public int getAlto(){
+        return alto;
+    }
+    public int getAncho(){
+        return ancho;
+    }
+
+    // imprimir el rectángulo
+    public void rectangulo(){
         for (int i = 0; i < alto; i++) {
             for (int j = 0; j < ancho; j++) {
                 System.out.print("* ");
@@ -17,24 +55,27 @@ public class Rectangulo {
         }
     }
 
-    public static int areaRectangulo(int ancho, int alto){
-        return ancho * alto;
+    // Calcular área del rectángulo
+    public int areaRectangulo(){
+        return alto * ancho;
     }
 
-    public static int perimetroRectangulo(int ancho, int alto){
-        return (ancho * 2) + (alto * 2);
+    // Perímetro del rectángulo
+    public int perimetroRectangulo(){
+        return (alto * 2) + (ancho * 2);
     }
 
-    public static String comprobarDireccion(int ancho, int alto){
-        if (alto < ancho) {
-            return "La dirección del rectángulo es horizontal";
+    // Comprobar si es horizontal o vertical
+    public String direccionRectangulo(){
+        if (ancho < alto){
+            return "El rectángulo es vertical";
         } else {
-            return "La dirección del rectángulo es vertical";
+            return "El rectángulo es horizontal";
         }
     }
 
-    public static String datos(int ancho, int alto){
-        return "Alto: " + String.valueOf(alto) + "\n" +
-                "Ancho: " + String.valueOf(ancho);
+    // Datos del rectángulo
+    public String datosRectangulo(){
+        return "Alto: " + alto + "\nAncho: " + ancho;
     }
 }
