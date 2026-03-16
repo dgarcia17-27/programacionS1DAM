@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Book lotr = new Book("El Hobbit","Tolkien", 1900, "Ficción");
-        Book quijote = new Book("El quijote","Cervantes", 1800, "Novela");
+        Personaje pikachu = new Personaje("Pikachu",10,3);
+        Personaje charizard = new Personaje("Charizard",30,39);
 
-        lotr.leerLibro();
-        quijote.leerLibro();
+        pikachu.entrenar(5);
+        charizard.pelear(15);
+        Personaje.displayPj();
     }
 }
