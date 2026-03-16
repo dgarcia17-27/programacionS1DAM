@@ -66,11 +66,11 @@ public class Rectangulo {
     }
 
     // Comprobar si es horizontal o vertical
-    public String direccionRectangulo(){
+    public void direccionRectangulo(){
         if (ancho < alto){
-            return "El rectángulo es vertical";
+            System.out.println("El rectángulo es vertical");
         } else {
-            return "El rectángulo es horizontal";
+            System.out.println("El rectángulo es horizontal");
         }
     }
 

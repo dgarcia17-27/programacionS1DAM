@@ -9,7 +9,7 @@ public class Main {
                             "\nAncho: " + prueba.getAncho());
         System.out.println("Área: " + prueba.areaRectangulo());
         System.out.println("Perímetro: " + prueba.perimetroRectangulo());
-        System.out.println(prueba.direccionRectangulo());
+        prueba.direccionRectangulo();
 
     }
 }
