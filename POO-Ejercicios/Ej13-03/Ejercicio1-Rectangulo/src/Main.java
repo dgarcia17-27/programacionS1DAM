@@ -1,6 +1,6 @@
 public class Main {
     public void main(String[] args) {
-        Rectangulo prueba = new Rectangulo(2,5);
+        Rectangulo prueba = new Rectangulo(5,2);
 
         prueba.rectangulo();
 
