@@ -1,23 +1,31 @@
+import java.util.ArrayList;
+import java.util.Date;
+
 public class Factura {
     // ATRIBUTOS
-    private String fecha;
+    private Date fecha;
     private int numeroFactura;
-    public LineaFactura lineaFacturas;
+    private ArrayList<LineaFactura> lineaFacturas;
     private boolean pagada;
 
-    // CONTSTRUCTOR
-    public Factura(String fecha, LineaFactura lineaFacturas, boolean pagada){
+    // CONSTRUCTOR
+    public Factura(){
+        this.lineaFacturas = new ArrayList<>();
+        this.pagada = false;
+    }
+
+    public Factura(int numeroFactura, Date fecha){
+        this.numeroFactura = numeroFactura;
         this.fecha = fecha;
-        this.lineaFacturas = lineaFacturas;
-        this.pagada = pagada;
-        this.numeroFactura++;
+        this.lineaFacturas = new ArrayList<>();
+        this.pagada = false;
     }
 
     // GETTERS Y SETTERS
-    public String getFecha() {
+    public Date getFecha() {
         return fecha;
     }
-    public void setFecha(String fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
@@ -28,26 +36,19 @@ public class Factura {
         this.numeroFactura = numeroFactura;
     }
 
-    public LineaFactura getLineaFacturas() {
+    public ArrayList<LineaFactura> getLineaFacturas() {
         return lineaFacturas;
-    }
-    public void setLineaFacturas(LineaFactura lineaFacturas) {
-        this.lineaFacturas = lineaFacturas;
     }
 
     public boolean isPagada() {
-        return this.pagada;
+        return pagada;
     }
     public void setPagada(boolean pagada) {
         this.pagada = pagada;
     }
 
-    public void getDatos(){
-        System.out.println("Fecha: " + this.fecha);
-        System.out.println("Número factura: " + this.numeroFactura);
-        System.out.println("Código: " + lineaFacturas.getCodigo());
-        System.out.println("Precio: " + lineaFacturas.getPrecio());
-        System.out.println("Cantidad: " + lineaFacturas.getCantidad());
-        System.out.println("Pagada: " + this.pagada);
+    // MÉTODOS
+    public void añadirLineaFactura(LineaFactura linea){
+        lineaFacturas.add(linea);
     }
 }

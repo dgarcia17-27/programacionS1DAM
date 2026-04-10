@@ -1,29 +1,24 @@
 public class LineaFactura {
     // ATRIBUTOS
+    private Producto producto;
     private int codigo;
     private double precio;
     private int cantidad;
 
     // CONSTRUCTOR
-    public LineaFactura(Producto p){
-        this.codigo = p.getCodigo();
-        this.precio = p.getPrecio();
-        this.cantidad = p.getCantidad();
-    }
-
-    // GETTERS Y SETTERS
-    public int getCantidad() {
-        return cantidad;
-    }
-    public void setCantidad(int cantidad) {
+    public LineaFactura(int codigo, Producto producto, double precio, int cantidad){
+        this.codigo = codigo;
+        this.producto = producto;
+        this.precio = producto.getPrecio();
         this.cantidad = cantidad;
     }
 
-    public double getPrecio() {
-        return precio;
+    // GETTERS Y SETTERS
+    public Producto getProducto() {
+        return producto;
     }
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 
     public int getCodigo() {
@@ -33,9 +28,22 @@ public class LineaFactura {
         this.codigo = codigo;
     }
 
-    public void getDatosLinea(){
-        System.out.println("Código: " + this.codigo);
-        System.out.println("Precio: " + this.precio);
-        System.out.println("Cantidad: " + this.cantidad);
+    public double getPrecio() {
+        return precio;
+    }
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    // MÉTODOS
+    public double precioTotal(){
+        return precio * cantidad;
     }
 }
